@@ -686,9 +686,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Este es un proyecto en donde se requiere crear juego 3D de tipo \u201CEscape
-    Room\u201D. \n\nEn donde su objetivo principal ser\xE1 completar un desaf\xEDo
-    de categor\xEDa puzle dentro de una habitaci\xF3n cerrada, para de esta forma
-    escapar del lugar y generar entretenimiento al jugador."
+    Room\u201D. \n\nPara ganar, debera de buscar 5 llaves escondidas por toda la sala,
+    pero no es tan sencillo como parece, Es importante mirar bien el entorno y las
+    habilidades de su personaje"
 --- !u!222 &1436385942
 CanvasRenderer:
   m_ObjectHideFlags: 0
