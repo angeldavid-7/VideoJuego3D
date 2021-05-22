@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Fire
   - lava
+  - Target
+  - ExplosiveBarrel
+  - Metal
+  - llave
+  - shoot
+  - player
+  - asensor
   layers:
   - Default
   - TransparentFX
