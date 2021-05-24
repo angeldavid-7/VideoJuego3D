@@ -83,11 +83,15 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scenes\Menu\Scripts\LevelMgr.cs" />
+    <Compile Include="Assets\Scenes\Menu\Scripts\Transiciones.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\ActivadorAscensor.cs" />
+    <Compile Include="Assets\Scenes\PrimerNivel\Scripts\ActivarAsensor.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\Asensor.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\Boton.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\BotonPuerta.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\Llave.cs" />
+    <Compile Include="Assets\Scenes\PrimerNivel\Scripts\MensajeGanaste.cs" />
+    <Compile Include="Assets\Scenes\PrimerNivel\Scripts\MensajeGranada.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\PresionarTab.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\Puerta.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\PuertaBoton.cs" />

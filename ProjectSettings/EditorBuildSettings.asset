@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrimerNivel/Juego.unity
     guid: dd3b1d795c71ef54b8f346a16e778891
+  - enabled: 1
+    path: Assets/Scenes/PrimerNivel/GameOver.unity
+    guid: a4bbb38bab67394468e8cb57638c19fd
   m_configObjects: {}

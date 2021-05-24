@@ -37,7 +37,7 @@ public class PuertaBoton : MonoBehaviour
     public void Confirmacion(bool Disparo)
     {
 
-        if (Disparo && gameObject.transform.position.y <= 2.38)
+        if (Disparo && gameObject.transform.position.x <= 14.117)
         {
             Moverse();
         }
@@ -45,7 +45,7 @@ public class PuertaBoton : MonoBehaviour
         void Moverse()
         {
 
-            gameObject.transform.Translate(0, speed * Time.deltaTime, 0);
+            gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
 
         }
 

@@ -13,6 +13,9 @@ TagManager:
   - shoot
   - player
   - asensor
+  - asensor2
+  - ganaste
+  - transicion
   layers:
   - Default
   - TransparentFX

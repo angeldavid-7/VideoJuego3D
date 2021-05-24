@@ -5,8 +5,9 @@ using UnityEngine;
 public class ActivadorAscensor : MonoBehaviour
 {
     public bool upHit = false;
-    
-   // Asensor asensor = new Asensor();
+    public bool downHit = false;
+
+    // Asensor asensor = new Asensor();
 
 
     void Update()
@@ -15,7 +16,18 @@ public class ActivadorAscensor : MonoBehaviour
         {
            
             Asensor.up = true;
+            Asensor.down = false;
+            upHit = false;
 
+        }
+
+        if (downHit == true)
+        {
+
+            Asensor.down = true;
+            Asensor.up = false;
+            downHit = false;
+            
 
         }
     }

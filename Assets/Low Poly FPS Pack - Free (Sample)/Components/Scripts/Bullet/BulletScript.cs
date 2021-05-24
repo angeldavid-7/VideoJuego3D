@@ -69,6 +69,16 @@ public class BulletScript : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        //If bullet collides with "asensor2" tag
+        if (collision.transform.tag == "asensor2")
+        {
+            //Toggle "upHit" on target object
+            collision.transform.gameObject.GetComponent
+                <ActivadorAscensor>().downHit = true;
+            //Destroy bullet object
+            Destroy(gameObject);
+        }
+
         //If bullet collides with "ExplosiveBarrel" tag
         if (collision.transform.tag == "ExplosiveBarrel") 
 		{

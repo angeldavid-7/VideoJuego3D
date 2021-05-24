@@ -10,13 +10,21 @@ public class Asensor : MonoBehaviour
 
 
     public static bool up = false;
+    public static bool down = false;
 
 
 
-    void move()
+    void moveUp()
     {
 
         gameObject.transform.Translate(0, speed * Time.deltaTime, 0);
+
+    }
+
+    void moveDown()
+    {
+
+        gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
 
     }
 
@@ -26,9 +34,18 @@ public class Asensor : MonoBehaviour
         {
             if (gameObject.transform.position.y <= 11)
             {
-                move();
+                moveUp();
             }
             
+        }
+
+        if (down == true)
+        {
+            if (gameObject.transform.position.y >= 3.222987)
+            {
+                moveDown();
+            }
+
         }
 
     }

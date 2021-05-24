@@ -6,11 +6,9 @@ public class PuertaLlave : MonoBehaviour
 {
 
     public static bool doorKey=false;
-    public bool open=true;
-    public bool close;
     public float speed = 2;
     public bool inTrigger;
-    private GUIStyle guiStyle = new GUIStyle(); //create a new variable
+    private GUIStyle guiStyle = new GUIStyle(); 
 
     void OnTriggerEnter(Collider other)
     {
@@ -40,26 +38,14 @@ public class PuertaLlave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inTrigger)
-        {
-            
-           
-                if (doorKey)
-                {
-                    if (Input.GetKeyDown(KeyCode.Tab))
-                    {
-                        open = true;
-                        
-                    }
-                }
-            
 
-            
-        }
-
-        if (open && gameObject.transform.position.y <= 3.7)
+        if (doorKey)
         {
-            Moverse();
+
+            if (gameObject.transform.position.y <= 3.7)
+            {
+                Moverse();
+            }
         }
 
     }
@@ -72,15 +58,12 @@ public class PuertaLlave : MonoBehaviour
         {
    
             
-                if (doorKey)
+                if (doorKey == false)
                 {
-                    GUI.Box(new Rect(490, 530, 200, 25), "Presiona la tecla Tab para abrir", guiStyle);
-                }
+                GUI.Box(new Rect(490, 530, 200, 25), "¡Necesitas todas las llaves!", guiStyle);
+            }
 
-                else
-                {
-                    GUI.Box(new Rect(490, 530, 200, 25), "¡Necesitas una llave!", guiStyle);
-                }
+                
             
         }
     }
