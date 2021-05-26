@@ -204,7 +204,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 		//Aiming
 		//Toggle camera FOV when right click is held down
-		if(Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting) 
+		if(Input.GetButton("Fire2") && !isReloading && !isRunning) 
 		{
 			
 			gunCamera.fieldOfView = Mathf.Lerp (gunCamera.fieldOfView,
@@ -290,7 +290,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		}
 			*/
 		//Throw grenade when pressing G key
-		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
+		if (Input.GetKeyDown (KeyCode.G) ) 
 		{
 			StartCoroutine (GrenadeSpawnDelay ());
 			//Play grenade throw animation
@@ -326,7 +326,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		}
 
 		//Shooting 
-		if (Input.GetMouseButtonDown (0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning) 
+		if (Input.GetMouseButtonDown (0) && !outOfAmmo && !isReloading  && !isRunning) 
 		{
 			anim.Play ("Fire", 0, 0f);
 	
@@ -435,7 +435,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		}
         */
 		//Reload 
-		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
+		if (Input.GetKeyDown (KeyCode.R) && !isReloading ) 
 		{
 			//Reload
 			Reload ();
