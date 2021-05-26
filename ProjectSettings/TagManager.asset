@@ -16,6 +16,7 @@ TagManager:
   - asensor2
   - ganaste
   - transicion
+  - ascensorF
   layers:
   - Default
   - TransparentFX

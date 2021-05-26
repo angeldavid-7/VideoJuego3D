@@ -52,7 +52,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	private bool isReloading;
 
 	//Holstering weapon
-	private bool hasBeenHolstered = false;
+	//private bool hasBeenHolstered = false;
 	//If weapon is holstered
 	private bool holstered;
 	//Check if running
@@ -62,7 +62,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Check if walking
 	private bool isWalking;
 	//Check if inspecting weapon
-	private bool isInspecting;
+	//private bool isInspecting;
 
 	//How much ammo is currently left
 	private int currentAmmo;
@@ -238,7 +238,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		if (randomMuzzleflash == true) {
 			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
-
+        /*
 		//Timescale settings
 		//Change timescale to normal when 1 key is pressed
 		if (Input.GetKeyDown (KeyCode.Alpha1)) 
@@ -270,14 +270,14 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			Time.timeScale = 0.0f;
 			timescaleText.text = "0.0";
 		}
-
+        */
 		//Set current ammo text from ammo int
 		currentAmmoText.text = currentAmmo.ToString ();
 
 		//Continosuly check which animation 
 		//is currently playing
 		AnimationCheck ();
-
+        /*
 		//Play knife attack 1 animation when Q key is pressed
 		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
 		{
@@ -288,7 +288,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			anim.Play ("Knife Attack 2", 0, 0f);
 		}
-			
+			*/
 		//Throw grenade when pressing G key
 		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
 		{
@@ -397,7 +397,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 				Spawnpoints.casingSpawnPoint.transform.position, 
 				Spawnpoints.casingSpawnPoint.transform.rotation);
 		}
-
+        /*
 		//Inspect weapon when pressing T key
 		if (Input.GetKeyDown (KeyCode.T)) 
 		{
@@ -433,7 +433,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			anim.SetBool ("Holster", false);
 		}
-
+        */
 		//Reload 
 		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
 		{
@@ -599,7 +599,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			isReloading = false;
 		}
 
-		//Check if inspecting weapon
+	/*  Check if inspecting weapon
 		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Inspect")) 
 		{
 			isInspecting = true;
@@ -607,7 +607,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		else 
 		{
 			isInspecting = false;
-		}
+		}*/
 	}
 }
-// ----- Low Poly FPS Pack Free Version -----

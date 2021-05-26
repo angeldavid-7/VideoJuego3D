@@ -8,7 +8,9 @@ public class PuertaBoton : MonoBehaviour
     public bool open;
     public float speed = 2;
     public bool inTrigger;
-    public static bool activador;
+    public static bool activador = false;
+    public static bool resetPuerta = false;
+    public float posicion = 12.09375f;
 
     void OnTriggerEnter(Collider other)
     {
@@ -29,6 +31,14 @@ public class PuertaBoton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (resetPuerta == true)
+        {
+            gameObject.transform.Translate(posicion, 0, 0);
+            resetPuerta = false;
+            activador = false;
+
+        }
+
         Confirmacion(activador);
     }
 

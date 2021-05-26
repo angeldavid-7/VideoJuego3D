@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\DebrisScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\ExplosiveBarrelScript.cs" />
@@ -83,6 +82,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scenes\Menu\Scripts\LevelMgr.cs" />
+    <Compile Include="Assets\Scenes\Menu\Scripts\MovTexto.cs" />
     <Compile Include="Assets\Scenes\Menu\Scripts\Transiciones.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\ActivadorAscensor.cs" />
     <Compile Include="Assets\Scenes\PrimerNivel\Scripts\ActivarAsensor.cs" />

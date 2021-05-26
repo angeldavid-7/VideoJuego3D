@@ -7,10 +7,12 @@ public class MensajeGanaste : MonoBehaviour
 {
     public static bool aparecer = false;
     Transiciones transiciones;
+    Asensor ascensor;
 
     private void Start()
     {
         transiciones = GameObject.FindGameObjectWithTag("transicion").GetComponent<Transiciones>();
+        ascensor = GameObject.FindGameObjectWithTag("ascensorF").GetComponent<Asensor>();
 
     }
 
@@ -18,7 +20,8 @@ public class MensajeGanaste : MonoBehaviour
     {
         if(aparecer == true)
         {
-            ganaste(); 
+            ganaste();
+            aparecer = false;
         }
         
     }
@@ -48,7 +51,9 @@ public class MensajeGanaste : MonoBehaviour
     {  
         transiciones.LoadScene("GameOver");
         Llave.resetllaves = true;
+        Asensor.resetAscensor = true;
         Cursor.visible = true;
+        PuertaBoton.resetPuerta = true;
         Cursor.lockState = CursorLockMode.Confined;
     }
 

@@ -11,6 +11,7 @@ public class Asensor : MonoBehaviour
 
     public static bool up = false;
     public static bool down = false;
+    public static bool resetAscensor = false;
 
 
 
@@ -28,8 +29,25 @@ public class Asensor : MonoBehaviour
 
     }
 
+    void Start()
+    {
+        gameObject.transform.Translate(0, 0, 0);
+    }
+
     void Update()
     {
+
+        if (resetAscensor == true)
+        {
+            gameObject.transform.Translate(0, 0, 0);
+            up = false;
+            down = false;
+            resetAscensor = false;
+        }
+
+
+
+
         if (up == true)
         {
             if (gameObject.transform.position.y <= 11)
